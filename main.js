@@ -19,9 +19,9 @@ const showParticipants = (data) => {
         arrayAux.push(element.name);
     });
 
-    //$("#users").text("Participants"+ arrayAux);
+    //$("#users").text("Participants: "+ arrayAux);
     //$("#users").html("<strong>Participants: </strong> "+arrayAux);
-    $("#users").text(arrayAux);
+    $("#users").text("Users: " + arrayAux);
 
 }
 
@@ -54,6 +54,11 @@ $(document).ready(function(){
 
 
         getWinner(participants);
+        var text;
+        text=$("#texto").val();
+        $("#texto").val("");
+        
+        alert(text);
     
     });
 
